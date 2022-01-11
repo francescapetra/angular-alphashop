@@ -9,7 +9,7 @@ export class LoginComponent implements OnInit {
 
   userid = '';
   password = '';
-  autenticato = false;
+  nonAutenticato = false;
   corretto = false;
   corrMsg = 'Complimenti, lo userid o la password sono corretti';
   errorMsg = 'Spiacente, lo userid o la password sono errati';
@@ -21,11 +21,11 @@ export class LoginComponent implements OnInit {
   gestAut(){
     if (this.userid === 'Francesca' && this.password === '1234567') {
 
-      this.autenticato = false;
+      this.nonAutenticato = false;
       this.corretto = true;
 
     }else{
-     this.autenticato = true;
+     this.nonAutenticato = true;
      this.corretto = false;
     }
 
