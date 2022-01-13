@@ -1,6 +1,6 @@
 <!-- <div *ngIf=' nonAutenticato'>{{errorMsg}}</div> -->
 <div *ngIf='corretto'>{{corrMsg}}</div>
-<div>
+<div class="border">
 
   <label for="userId">User Id:</label>
   <input type="text" id="userId" placeholder="Nome Utente" [(ngModel)]="userid">
@@ -11,6 +11,7 @@
   <button (click)=gestAut()>Connetti</button>
 
 </div>
+
 
 <br>
 <br>
