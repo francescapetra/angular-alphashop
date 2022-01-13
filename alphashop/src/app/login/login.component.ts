@@ -26,6 +26,7 @@ export class LoginComponent implements OnInit {
       this.corretto = true;
       this.route.navigate(['welcome', this.userid]);
 
+
     }else{
      //this.nonAutenticato = true;
      this.corretto = false;
