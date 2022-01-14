@@ -1,6 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~bootstrap/dist/css/bootstrap.css";
 
+
+
 /* You can add global styles to this file, and also import other style files */
 .navbar-brand img {
 	height: 100%
@@ -226,7 +228,7 @@ card li {
 }
 
 .portlet>.portlet-title>.caption {
-	float: left;
+	/* float: left; */
 	display: inline-block;
 	font-size: 18px;
 	line-height: 18px;
@@ -394,7 +396,7 @@ label {
 	color: #333;
 	background: 0 0;
 	margin: 1px 0 0;
-	float: right;
+	/* float: right; */
 	display: inline-block;
 	border: 0;
 }
@@ -450,7 +452,7 @@ label {
 }
 
 .number-bollini {
-	float: left;
+	/* float: left; */
     display: inline-block;
     padding-left: 40px;
     padding-bottom: 6px;
