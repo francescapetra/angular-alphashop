@@ -10,10 +10,10 @@ export class LoginComponent implements OnInit {
 
   userid = '';
   password = '';
-  //nonAutenticato = false;
+  nonAutenticato = false;
   corretto = false;
   corrMsg = 'Complimenti, lo userid o la password sono corretti';
-  //errorMsg = 'Spiacente, lo userid o la password sono errati';
+  errorMsg = 'Spiacente, lo userid o la password sono errati';
 
   constructor(private route : Router) { }
 
