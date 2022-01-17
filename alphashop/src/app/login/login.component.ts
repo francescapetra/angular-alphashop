@@ -22,13 +22,13 @@ export class LoginComponent implements OnInit {
   gestAut(){
     if (this.userid === 'Francesca' && this.password === '1234567') {
 
-       //this.nonAutenticato = false;
+      this.nonAutenticato = false;
       this.corretto = true;
       this.route.navigate(['welcome', this.userid]);
 
 
     }else{
-     //this.nonAutenticato = true;
+     this.nonAutenticato = true;
      this.corretto = false;
     }
 
