@@ -10,6 +10,8 @@ import { LoginComponent } from './login/login.component';
 import { ErrorComponent } from './error/error.component';
 import { ArticoliComponent } from './articoli/articoli.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { FooterComponent } from './footer/footer.component';
+import { JumbotronComponent } from './jumbotron/jumbotron.component';
 // AGGIUNTO ALESSIO
 //import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 //import { TooltipModule } from 'ngx-bootstrap/tooltip';
@@ -24,6 +26,8 @@ import { NavbarComponent } from './navbar/navbar.component';
     ErrorComponent,
     ArticoliComponent,
     NavbarComponent,
+    FooterComponent,
+    JumbotronComponent,
 
   ],
   imports: [
