@@ -1,3 +1,4 @@
+import { RouteGuardService } from './services/route-guard.service';
 import { LogoutComponent } from './logout/logout.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
@@ -11,9 +12,9 @@ const routes: Routes = [
   {path: '', component: LoginComponent},
   {path: 'index', component: LoginComponent},
   {path: 'login', component: LoginComponent},
-  {path: 'welcome/:userid', component: WelcomeComponent},
-  {path: 'articoli', component: ArticoliComponent},
-  {path: 'logout', component: LogoutComponent},
+  {path: 'welcome/:userid', component: WelcomeComponent, canActivate:[RouteGuardService]},
+  {path: 'articoli', component: ArticoliComponent, canActivate:[RouteGuardService]},
+  {path: 'logout', component: LogoutComponent, canActivate:[RouteGuardService]},
   {path: '**', component: ErrorComponent} //sempre ultimo
 
 ];
