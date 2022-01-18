@@ -11,10 +11,10 @@ export class LoginComponent implements OnInit {
 
   userid = '';
   password = '';
-  autenticato = false;
+  nonAutenticato = false;
   // corretto = false;
   // corrMsg = 'Complimenti, lo userid o la password sono corretti';
-  // errorMsg = 'Spiacente, lo userid o la password sono errati';
+  errorMsg = 'Spiacente, lo userid o la password sono errati';
 
   constructor(private route : Router, private BasicAuth: AuthappService ) { }
 
@@ -23,12 +23,13 @@ export class LoginComponent implements OnInit {
   gestAut(){
      if (this.BasicAuth.autentica(this.userid, this.password)) {
 
-      this.autenticato = true;
+      this.nonAutenticato = false;
       this.route.navigate(['welcome', this.userid])
 
      }else {
 
-      this.autenticato = false;
+      this.nonAutenticato = true;
+
      }
 
   }
