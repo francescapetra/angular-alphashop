@@ -11,6 +11,8 @@ export class AuthappService {
 
     if (UserId === 'Francesca' && Password === '1234567') {
 
+      sessionStorage.setItem('Utente', UserId);
+
       return true;
 
     }else{
