@@ -1,3 +1,4 @@
+import { LogoutComponent } from './logout/logout.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ArticoliComponent } from './articoli/articoli.component';
@@ -12,7 +13,8 @@ const routes: Routes = [
   {path: 'login', component: LoginComponent},
   {path: 'welcome/:userid', component: WelcomeComponent},
   {path: 'articoli', component: ArticoliComponent},
-  {path: '**', component: ErrorComponent},
+  {path: 'logout', component: LogoutComponent},
+  {path: '**', component: ErrorComponent} //sempre ultimo
 
 ];
 

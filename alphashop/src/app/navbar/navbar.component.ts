@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AuthappService } from '../services/authapp.service';
 // import * as $ from 'jquery';
 
 @Component({
@@ -9,12 +10,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
-  constructor() { }
+  constructor(public BasicAuth: AuthappService) { }
 
   ngOnInit(): void {
-  //   $(document).ready(function() {
-  //    alert('I am Called From jQuery');
-  //  });
+
   }
 
 }
+
+

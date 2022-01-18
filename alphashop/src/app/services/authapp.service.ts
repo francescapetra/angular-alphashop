@@ -22,4 +22,25 @@ export class AuthappService {
 
   }
 
+  loggedUser(){
+
+    let utente = sessionStorage.getItem('Utente');
+
+    return (sessionStorage.getItem('Utente') != null) ? utente : '';
+
+  }
+
+  isLogged(){
+
+    return (sessionStorage.getItem('Utente') != null) ? true : false;
+
+  }
+
+  clearAll(){
+
+    //sessionStorage.clear();
+    sessionStorage.removeItem('Utente');
+
+  }
+
 }
